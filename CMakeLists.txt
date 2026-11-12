@@ -37,4 +37,11 @@ install(
   DESTINATION share/${PROJECT_NAME}
 )
 
+install(
+  PROGRAMS
+    scripts/depth_to_points.py
+    scripts/odom_to_tf.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 ament_package()
